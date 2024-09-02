@@ -7,8 +7,10 @@ import SearchBox from "./components/SearchBox";
 import AddFavourites from "./components/AddFavourites";
 import RemoveFavourites from "./components/RemoveFavourites";
 
+import data from "../data.json";
+
 const App = () => {
-  const [movies, setMovies] = useState([]);
+  const [movies, setMovies] = useState(data);
   const [favourites, setFavourites] = useState([]);
   const [searchValue, setSearchValue] = useState("");
 
